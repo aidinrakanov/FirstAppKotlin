@@ -10,10 +10,10 @@ class Second : AppCompatActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_second)
-            showTextFirstActivity()
+            showActivity()
         }
 
-        private fun showTextFirstActivity() {
+        private fun showActivity() {
             val getText = intent
             text = getText.getStringExtra("key") as String
             second_text.setText(text)
