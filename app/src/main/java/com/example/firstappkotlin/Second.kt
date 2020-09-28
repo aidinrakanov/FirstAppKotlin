@@ -19,7 +19,7 @@ class Second : AppCompatActivity() {
             second_text.setText(text)
         }
 
-        fun onSendBack(view: View) {
+        fun onSendBack() {
             val newText = second_text.text.toString().trim()
             if (newText.isNotEmpty()) {
                 intent.putExtra("key", newText)

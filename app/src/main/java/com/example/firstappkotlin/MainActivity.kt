@@ -8,13 +8,12 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    var REQUEST_KEY: Int = 77
+     private var REQUEST_KEY: Int = 77
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        sendActivity()
 
     }
 
