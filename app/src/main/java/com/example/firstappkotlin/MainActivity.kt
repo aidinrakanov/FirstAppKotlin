@@ -14,8 +14,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        sendActivity()
 
     }
+
+        fun sendActivity() {
+            val textFirstActivity = first_text.text.toString().trim()
+            if (textFirstActivity.isNotEmpty()) {
+                startActivityForResult(
+                    Intent(this, Second::class.java).putExtra("key", textFirstActivity)
+                    , REQUEST_KEY
+                )
+            }
+        }
 
         override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
             super.onActivityResult(requestCode, resultCode, data)
