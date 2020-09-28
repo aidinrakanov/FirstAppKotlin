@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/text_from"
+        android:id="@+id/text_from1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
